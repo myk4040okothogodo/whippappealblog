@@ -7,6 +7,8 @@ const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
 * will be treated as an API endpoint instead of a page.         *
 *************************************************************** */
 
+
+
 // export a default function for API route to work
 export default async function asynchandler(req, res) {
   const graphQLClient = new GraphQLClient((graphqlAPI), {
